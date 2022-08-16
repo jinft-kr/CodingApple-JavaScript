@@ -17,7 +17,7 @@
           <input type="text" class="form-control" id="email">
         </div>
         <div class="my-3">
-          <input type="password" class="form-control">
+          <input type="password" class="form-control" id="pw">
         </div>
         <button type="submit" class="btn btn-primary">전송</button>
         <button type="button" class="btn btn-danger" id="close">닫기</button>
@@ -64,6 +64,12 @@
       $('form').on('submit', function(e){
         if(document.getElementById('email').value == '' ){
           alert('이메일을 입력해주세요');
+          e.preventDefault();
+        }else if(document.getElementById('pw').value == ''){
+          alert('비밀번호를 입력해주세요');
+          e.preventDefault();
+        }else if(document.getElementById('pw').value.length < 6){
+          alert('비밀번호를 6자 이상으로 입력해주세요');
           e.preventDefault();
         }
       });
