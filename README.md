@@ -73,3 +73,15 @@
    3. 클래스를 떼었다 붙였다 하려면 toggle() : 파라미터값이 있으면 제거, 없으면 추가
    4. querySelector() : 중복된 id, class가 있을 경우 맨 위에 나오는 한개만 찾아줌
       1. querySelectorAll : 전체를 찾아줌
+7. jQuery 사용법 간단정리
+   1. [jQuery 설치](https://releases.jquery.com/)
+      1. HTML 조작문법을 쉽게 바꿔주는 라이브러리
+   2. 여러가지 jQuery 기본 함수
+      1. $('셀렉터')로 찾으면 jQuery함수만 붙일 수 있음
+      2. querySelector('셀렉터')로 찾으면 자바스크립트 함수만 붙일 수 있음
+   3. 모달창 만들기
+      1. one-way UI 애니메이션 만드는 법
+         1. 시작스타일
+         2. 최종스타일
+         3. 원할 때 최종스타일로 변하라고 코드짬
+         4. transition 추가
