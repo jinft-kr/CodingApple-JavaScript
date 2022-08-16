@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hello">안녕하세요</h1>
+    <h1 id="hi">JS 초보에요</h1>
+
+    <script>
+      document.getElementById('hello').innerHTML = '안녕';
+      // document : html문서
+      // .: ~의
+      // getElementById : ID가 hello인 요소를 찾아라
+      // innerHTML : 그거의 내부
+      // = : 오른쪽을 왼쪽에 넣어라
+
+      // document.getElementById('??').?? = '??';
+      // 1. 바꿀 요소 ID 2. 무엇을 3. 어떻게
+
+      // selector : 웹 문서안에 있는 원하는 요소를 찾을 때 쓰는 것 ex) getElementById
+
+      document.getElementById('hello').style.color = 'red';
+      document.getElementById('hello').innerHTML = '안녕';
+      document.getElementById('hi').innerHTML = 'JS 고수에요';
+      document.getElementById('hi').style.fontSize = '16px';
+    </script>
+
+  </body>
+</html> 
