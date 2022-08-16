@@ -49,3 +49,13 @@
             at 알림창열기 (index.html?_ijt=718ij32ogrdr4ca17odc4olvq6:17:18)
             at HTMLButtonElement.onclick (index.html?_ijt=718ij32ogrdr4ca17odc4olvq6:14:31)
             ```
+4. function의 파라미터 문법
+   1. 파라미터 사용하기
+      ```
+      function plus(i){
+        2 + i
+      }
+      plus(1);
+      plus(2);
+      plus(3);
+      ```
