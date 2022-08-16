@@ -95,4 +95,12 @@
    1. 폼전송까지 막으려면
       1. e.preventDefault();
    2. else if 문법
-
+10. input, change 이벤트와 and, or 연산자
+    1. input, change 이벤트
+       1. input : <input>에 입력한 값이 바뀔 때 발생
+          1. ex) (경고) 지금 패스워드 4자 밖에 안됩니다.
+       2. change : <input>에 입력한 값이 바뀌고 `포커스를 잃을 때` 발생
+    2. if문은 실은 true/false 넣어야함
+    3. and or 연산자
+11. if/else, function 실력향상 과제
+12. 변수 문법과 Dark mode 버튼 만들기
