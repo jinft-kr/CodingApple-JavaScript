@@ -104,3 +104,9 @@
     3. and or 연산자
 11. if/else, function 실력향상 과제
 12. 변수 문법과 Dark mode 버튼 만들기
+    1. 참고) Bootstrap UI들은 스타일 바꾸려면 class명을 수정해야함
+13. 변수 심화학습시간 & 저번시간 숙제
+    1. 변수의 선언, 할당, 범위
+    2. let, const 써도 변수만들 수 있음
+       1. let: 재선언 X 재할당 O
+       2. const: 재선언 X 재할당 X
