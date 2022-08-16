@@ -59,3 +59,11 @@
       plus(2);
       plus(3);
       ```
+5. 자바스크립트 이벤트리스너
+   1. getElementsByClassName : class 로 element 찾기
+      1. class명이 중복되는게 있을 경우 인덱싱을 해야함
+         1. getElementsByClassName('title')[0]
+   2. addEventListener
+      1. event: 클릭, 키입력, 스크롤, 드래그 ...
+   3. 함수 파라미터 자리에 함수를 쓰면: 콜백함수라함
+      1. 콜백함수는 그냥 뭔가 순차적으로 실행하고 싶을 때 많이 보이는 함수형태

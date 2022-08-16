@@ -7,22 +7,21 @@
   </head>
   <body>
     <div class="alert-box" id="alert">
-      <p id="title">알림창임</p>
-      <button onclick="closeAlert('none')">닫기</button>
+      <p class="title">알림창임</p>
+      <button id="close">닫기</button>
     </div>
 
     <button onclick="openAlert('ID')">버튼1</button>
     <button onclick="openAlert('PW')">버튼2</button>
     <script>
       function openAlert(text){
-        document.getElementById('title').innerHTML = text ;
+        document.getElementsByClassName('title').innerHTML = text ;
         document.getElementById('alert').style.display = 'block';
       }
 
-      function closeAlert(option){
-        document.getElementById('alert').style.display = option;
-      }
-
+      document.getElementById('close').addEventListener('click', function (){
+        document.getElementById('alert').style.display = 'none'
+      })
     </script>
 
   </body>
