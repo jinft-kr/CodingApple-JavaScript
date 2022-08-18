@@ -1,6 +1,7 @@
 # codingapple-javascript
 [JavaScript 입문과 웹 UI개발](https://codingapple.com/course/javascript-jquery-ui/)
 
+### Level1
 1. 강의 소개와 자바스크립트의 근본
    ```
    document.getElementById('hello').innerHTML = '안녕';
@@ -110,3 +111,17 @@
     2. let, const 써도 변수만들 수 있음
        1. let: 재선언 X 재할당 O
        2. const: 재선언 X 재할당 X
+
+### Level2
+1. 변수, 사칙연산 실력향상 과제 
+2. setTimeout 타이머주는 법
+   1. setTimeout() 쓰는 법
+      1. X초 후 코드 실행하려면 setTimeout(function(){실행할 코드}, ms)
+   2. setInterval() 쓰는 법
+      1. X초마다 코드 실행하려면 setInterval(function(){실행할 코드}, ms)
+   3. 자바스크립트 문법이랑 브라우저 사용법이랑 다른 것임 
+      1. if var function : 자바 스크립트 문법
+      2. document.querySelector() setTimeout() alert() : 브라우저 문법
+   4. 콜백함수자리에 함수넣기 스킬
+      1. setTimeout(함수, 1000); function 함수(){}
+

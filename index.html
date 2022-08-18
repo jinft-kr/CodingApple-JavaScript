@@ -48,7 +48,20 @@
     <button id="login" class="btn btn-danger">로그인</button>
   </div>
 
+  <div class="alert-danger alert">
+    <span id="num">5</span>초 이내 구매시 사은품 증정!
+  </div>
+
     <script>
+
+      var num = 5;
+
+      setInterval(function(){
+        num -= 1;
+        if (num >= 0){
+          document.querySelector('#num').innerHTML = num;
+        }
+      }, 1000);
 
       $('#login').on('click', function (){
         $('.black-bg').addClass('show-modal');
