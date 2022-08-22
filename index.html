@@ -79,6 +79,9 @@
         if(document.getElementById('email').value == '' ){
           alert('이메일을 입력해주세요');
           e.preventDefault();
+        }else if(/\S+@\S+.\S+/.test('email')==false){
+          alert('이메일 형식이 잘못됐습니다.');
+          e.preventDefault();
         }else if(document.getElementById('pw').value == ''){
           alert('비밀번호를 입력해주세요');
           e.preventDefault();
