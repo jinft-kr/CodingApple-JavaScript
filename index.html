@@ -52,59 +52,107 @@
     <span id="num">5</span>초 이내 구매시 사은품 증정!
   </div>
 
-    <script>
+  <div style="overflow: hidden">
+    <div class="slide-container">
+      <div class="slide-box">
+        <img src="car1.png">
+      </div>
+      <div class="slide-box">
+        <img src="car2.png">
+      </div>
+      <div class="slide-box">
+        <img src="car3.png">
+      </div>
+    </div>
+  </div>
 
-      var num = 5;
+  <button class="prev">이전</button>
+  <button class="slide-1">1</button>
+  <button class="slide-2">2</button>
+  <button class="slide-3">3</button>
+  <button class="next">다음</button>
+  <script>
 
-      setInterval(function(){
-        num -= 1;
-        if (num >= 0){
-          document.querySelector('#num').innerHTML = num;
-        }
-      }, 1000);
+    var picture_num = 1;
 
-      $('#login').on('click', function (){
-        $('.black-bg').addClass('show-modal');
-      })
+    $('.slide-1').on('click', function() {
+      $('.slide-container').css('transform', 'translateX(0vw)');
+      picture_num = 1;
+    });
 
-      document.querySelector('.navbar-toggler').addEventListener('click', function (){
-        document.querySelectorAll('.list-group')[0].classList.toggle('show');
-      })
+    $('.slide-2').on('click', function() {
+      $('.slide-container').css('transform', 'translateX(-100vw)');
+      picture_num = 2;
+    });
 
-      $('#close').on('click', function(){
-        $('.black-bg').removeClass('show-modal');
-      });
+    $('.slide-3').on('click', function() {
+      $('.slide-container').css('transform', 'translateX(-200vw)');
+      picture_num = 3;
+    });
 
-      $('form').on('submit', function(e){
-        if(document.getElementById('email').value == '' ){
-          alert('이메일을 입력해주세요');
-          e.preventDefault();
-        }else if(/\S+@\S+.\S+/.test('email')==false){
-          alert('이메일 형식이 잘못됐습니다.');
-          e.preventDefault();
-        }else if(document.getElementById('pw').value == ''){
-          alert('비밀번호를 입력해주세요');
-          e.preventDefault();
-        }else if(document.getElementById('pw').value.length < 6){
-          alert('비밀번호를 6자 이상으로 입력해주세요');
-          e.preventDefault();
-        }
-      });
+    $('.next').on('click', function (){
+      if(picture_num != 3){
+        $('.slide-container').css('transform', 'translateX(-' + picture_num + '00vw)');
+        picture_num += 1;
+      }
+    });
 
-      var count = 0;
+    $('.prev').on('click', function (){
+      $('.slide-container').css('transform', 'translateX(-' + (picture_num-1) + '00vw)');
+      picture_num -= 1;
+    });
 
-      $('.badge').on('click', function (){
-        count += 1;
-        if(count % 2 == 0){
-          $('.badge').html('Light 🔄');
-          $('.mode').addClass('dark')
-        }else{
-          $('.badge').html('Dark 🔄');
-          $('.mode').removeClass('dark');
-        }
-      })
+    var num = 5;
 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    setInterval(function(){
+      num -= 1;
+      if (num >= 0){
+        document.querySelector('#num').innerHTML = num;
+      }
+    }, 1000);
+
+    $('#login').on('click', function (){
+      $('.black-bg').addClass('show-modal');
+    })
+
+    document.querySelector('.navbar-toggler').addEventListener('click', function (){
+      document.querySelectorAll('.list-group')[0].classList.toggle('show');
+    })
+
+    $('#close').on('click', function(){
+      $('.black-bg').removeClass('show-modal');
+    });
+
+    $('form').on('submit', function(e){
+      if(document.getElementById('email').value == '' ){
+        alert('이메일을 입력해주세요');
+        e.preventDefault();
+      }else if(/\S+@\S+.\S+/.test('email')==false){
+        alert('이메일 형식이 잘못됐습니다.');
+        e.preventDefault();
+      }else if(document.getElementById('pw').value == ''){
+        alert('비밀번호를 입력해주세요');
+        e.preventDefault();
+      }else if(document.getElementById('pw').value.length < 6){
+        alert('비밀번호를 6자 이상으로 입력해주세요');
+        e.preventDefault();
+      }
+    });
+
+    var count = 0;
+
+    $('.badge').on('click', function (){
+      count += 1;
+      if(count % 2 == 0){
+        $('.badge').html('Light 🔄');
+        $('.mode').addClass('dark')
+      }else{
+        $('.badge').html('Dark 🔄');
+        $('.mode').removeClass('dark');
+      }
+    })
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html> 

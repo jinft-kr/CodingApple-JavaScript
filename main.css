@@ -45,3 +45,16 @@
     background-color: black;
     color: white;
 }
+
+.slide-container {
+    width: 300vw;
+    transition: all 1s;
+    /*transform : translateX(-100vw); !* margin-left보다 성능적으로 좀더 부드러움 *!*/
+}
+.slide-box {
+    width: 100vw;
+    float: left;
+}
+.slide-box img {
+    width: 100%;
+}
