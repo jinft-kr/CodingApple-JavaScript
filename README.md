@@ -180,3 +180,25 @@
          2. 자바스크립트 + 연산자 특징
             1. '문자' + 123 => '문자123'
             2. '문자' + '문자' => '문자문자'
+7. 스크롤 이벤트로 만드는 재밌는 기능들
+   1. 스크롤바 내리면 로고폰트 작게만들기
+      1. window안에 document가 들어있음
+      2. window.scrollY -> window.pageYOffset이랑 똑같음
+      3. window.scrollBy(x, y) : 현재 위치부터 강제로 스크롤하기
+   2. 스크롤관련 유용한 기능들
+   3. 회원약관 끝까지 읽으면 alert 띄우기
+   4. 박스 스크롤바 내린 높이는
+8. 스크롤 이벤트 숙제 해설 & 페이지 스크롤 응용
+   1. 스크롤 다룰 때 주의점 & 응용
+      1. scroll 다룰 때 주의점 1. scroll 이벤트 리스너 안의 코드는 1초에 60번 이상 실행 -> 컴퓨터에 부담을 줄 수 있음
+      2. scroll 다룰 때 주의점 2. 바닥체크도 여러번 중복으로 해줄듯
+   2. 현재 페이지 끝까지 스크롭 체크는? document html 높이
+      1. document.querySelector('html').scrollHeight // 현재 페이지 실제 높이
+      2. document.querySelector('html').clientHeight //페이지 보이는 부분 높이
+      3. window.scrollY // 현재 페이지 스크롤 양
+      4. html태그는 페이지 오드 완료시 실행해야 정확 -> 따라서 <body> 끝나기 전에 넣는게 좋음  
+      5. document.documentElement.scrollHeight == document.querySelector('html').scrollHeight
+   3. 오늘의 교훈
+      1. 스크롤바 조작할 때마다 코드 실행 가능하구나
+      2. 박스의 실제 높이 / 보이는 높이 구할 수 있구나
+      3. 스크롤양도 구할 수 있군

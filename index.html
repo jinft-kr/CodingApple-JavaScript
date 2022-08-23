@@ -48,6 +48,12 @@
     <button id="login" class="btn btn-danger">로그인</button>
   </div>
 
+  <div class="lorem" style="width: 200px; height: 100px; overflow-y: scroll">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptas voluptatum minus praesentium fugit debitis at, laborum ipsa itaque placeat sit, excepturi eius. Nostrum perspiciatis, eligendi quae consectetur praesentium exercitationem.
+  </div>
+
+  <div style="height: 1000px"></div>
+
   <div class="alert-danger alert">
     <span id="num">5</span>초 이내 구매시 사은품 증정!
   </div>
@@ -72,6 +78,25 @@
   <button class="slide-3">3</button>
   <button class="next">다음</button>
   <script>
+
+    // 스크롤 내리면 폰트 작아지기
+    $(window).on('scroll', function (){
+      if(window.scrollY > 100){
+        $('.navbar-brand').css('font-size', '20px');
+      } else{
+        $('.navbar-brand').css('font-size', '25px');
+      }
+    });
+
+    // div의 스크롤바 내린 양 + 눈에 보이는 div 높이 == div의 실제 높이
+    $('.lorem').on('scroll', function (){
+      var scrollHeight = document.querySelector('.lorem').scrollHeight;
+      var scrollTop = document.querySelector('.lorem').scrollTop;
+      var height = document.querySelector('.lorem').clientHeight;
+      if((scrollTop + scrollHeight) > (height -10)){
+        alert('회원약관 다 읽음');
+      }
+    });
 
     var picture_num = 1;
 
