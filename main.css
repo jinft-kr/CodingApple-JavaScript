@@ -23,7 +23,7 @@
     height: 100%;
     position: fixed;
     background: rgba(0,0,0,0.5);
-    z-index: 5;
+    z-index: 6;
     padding: 30px;
     visibility: hidden; /* -> 있는데 안보여주는 것 / display: none; -> 아예 숨기는 것*/
     opacity: 0;

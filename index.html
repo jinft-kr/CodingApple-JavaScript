@@ -79,6 +79,13 @@
   <button class="next">다음</button>
   <script>
 
+    // 모달창 밖에 클릭했을 때 모달찿 꺼지기
+    document.querySelector('.black-bg').addEventListener('click', function (e){
+      if($(e.target) == $('.black-bg')){
+        document.querySelector('.black-bg').classList.remove('show-modal');
+      }
+    })
+
     // 스크롤 내리면 폰트 작아지기
     $(window).on('scroll', function (){
       if(window.scrollY > 100){
