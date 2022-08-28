@@ -239,3 +239,13 @@
     1. 함수로 축약하기
     2. 탭 다른 방식으로 만들건데
     3. dataset 문법알면 더 간단해짐
+
+Level3
+1. Array와 Object 자료형
+   1. 상세페이지를 만들고 싶은데
+   2. Array 자료형
+      1. var car = ['소나타', 50000, 'white']; // Array 자료형
+   3. Object 자료형
+      1. var car2 = {name: '소나타', price: 50000}; //object 자료형 (key, value)
+   4. Array / Object 차이
+      1. Array : 순서대로 자료 저장, 따라서 자료간 정렬 가능, 중간에 자르기 가능 / Object: 이름을 가지고 저장 가능, 순서개념 없음
