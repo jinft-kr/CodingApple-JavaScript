@@ -19,6 +19,6 @@ function openTab(num){
 }
 
 // var car = ['소나타', 50000, 'white']; // Array 자료형
-var car2 = {name: '소나타', price: 50000}; //object 자료형 (key, value)
+var car2 = {name: '소나타', price: [50000, 3000, 4000]}; //object 자료형 (key, value)
 document.querySelector('.car-title').innerHTML = car2.name;
-document.querySelector('.car-price').innerHTML = car2.price;
+document.querySelector('.car-price').innerHTML = car2.price[0];

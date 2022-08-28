@@ -249,3 +249,7 @@ Level3
       1. var car2 = {name: '소나타', price: 50000}; //object 자료형 (key, value)
    4. Array / Object 차이
       1. Array : 순서대로 자료 저장, 따라서 자료간 정렬 가능, 중간에 자르기 가능 / Object: 이름을 가지고 저장 가능, 순서개념 없음
+2. 약간 복잡한 Array & Object 데이터바인딩
+   1. object안에 array가 있으면?
+   2. 이런 쓸데없는거 왜하냐면 (서버/클라이언드 사이드 렌더링)
+   3. 오늘의 숙제
